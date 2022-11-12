@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="134b44e3-6332-48dd-ad3f-a4ac0742f46b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/legartak/FirstTask/ArraySorting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/legartak/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/legartak/SecondTask/HashTagFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/legartak/ThirdTask/Cone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/legartak/ThirdTask/Cube.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/legartak/ThirdTask/Cylinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/legartak/ThirdTask/Figure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/legartak/ThirdTask/RectangularPrism.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/legartak/ThirdTask/Sphere.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/legartak/ThirdTask/SquarePyramid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/legartak/ThirdTask/TriangularPrism.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/legartak/ThirdTask/TriangularPyramid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/legartak/FirstTask/ArraySortingTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/legartak/SecondTask/HashTagFinderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/legartak/ThirdTask/CollectionSortingTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HN5xTnCs05MAsytFIYpIzhMc4Y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "/home/legartak/IdeaProjects/FirstHomework",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "advanced.settings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.legartak.FirstTask" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.All in FirstHomework">
+    <configuration name="All in FirstHomework" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FirstHomework" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashTagFinderTest.testALotTagsInOneText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FirstHomework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.legartak.SecondTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.legartak.SecondTask" />
+      <option name="MAIN_CLASS_NAME" value="com.legartak.SecondTask.HashTagFinderTest" />
+      <option name="METHOD_NAME" value="testALotTagsInOneText" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashTagFinderTest.testEmptyListGiven" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FirstHomework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.legartak.SecondTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.legartak.SecondTask" />
+      <option name="MAIN_CLASS_NAME" value="com.legartak.SecondTask.HashTagFinderTest" />
+      <option name="METHOD_NAME" value="testEmptyListGiven" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashTagFinderTest.testEmptyWillBeReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FirstHomework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.legartak.SecondTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.legartak.SecondTask" />
+      <option name="MAIN_CLASS_NAME" value="com.legartak.SecondTask.HashTagFinderTest" />
+      <option name="METHOD_NAME" value="testEmptyWillBeReturned" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashTagFinderTest.testMixedTexts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FirstHomework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.legartak.SecondTask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.legartak.SecondTask" />
+      <option name="MAIN_CLASS_NAME" value="com.legartak.SecondTask.HashTagFinderTest" />
+      <option name="METHOD_NAME" value="testMixedTexts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in FirstHomework" />
+        <item itemvalue="JUnit.HashTagFinderTest.testMixedTexts" />
+        <item itemvalue="JUnit.HashTagFinderTest.testEmptyWillBeReturned" />
+        <item itemvalue="JUnit.HashTagFinderTest.testEmptyListGiven" />
+        <item itemvalue="JUnit.HashTagFinderTest.testALotTagsInOneText" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="134b44e3-6332-48dd-ad3f-a4ac0742f46b" name="Changes" comment="" />
+      <created>1668112946684</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668112946684</updated>
+      <workItem from="1668112949367" duration="313000" />
+      <workItem from="1668113321392" duration="1073000" />
+      <workItem from="1668152883165" duration="1231000" />
+      <workItem from="1668190360256" duration="440000" />
+      <workItem from="1668191394066" duration="626000" />
+      <workItem from="1668242650528" duration="6359000" />
+      <workItem from="1668257253494" duration="14443000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
