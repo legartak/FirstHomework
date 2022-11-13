@@ -1,48 +1,34 @@
 package com.legartak.SecondTask;
 
-import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.LinkedList;
+import java.util.HashMap;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
 public class HashTagFinder {
-    public static Map<String, Integer> findTop5Tags(List<String> listOfTexts) {
-        if(listOfTexts == null) {
-            return null;
-        }
+    public static Map<String, Integer> findTop5Tags(List<String> texts) {
+        Objects.requireNonNull(texts);
 
         Map<String, Integer> temp = new HashMap<>();
 
-        for (String text: listOfTexts) {
-            List<String> uniqueWords = Arrays.stream(text.split(" ")).distinct().toList();
-            for (String word: uniqueWords) {
-                if(word.startsWith("#")) {
-                    if (temp.containsKey(word)) {
-                        temp.put(word, temp.get(word) + 1);
-                    } else {
-                        temp.put(word, 1);
-                    }
-                }
-            }
-        }
+        texts.stream().flatMap(text -> Arrays.stream(text.split(" "))
+                .distinct()).
+                filter(word -> word.startsWith("#"))
+                .forEach(obj -> temp.compute(obj, (key, value) -> value == null ? 1 : value + 1));
+
 
         List<Map.Entry<String, Integer>> sortingList = new LinkedList<>(temp.entrySet());
-        sortingList.sort((o1, o2) -> o1.getKey().compareTo(o2.getKey()));
-        sortingList.sort((o1, o2) -> o1.getValue().compareTo(o2.getValue()));
+        sortingList.sort(Map.Entry.comparingByKey(Comparator.reverseOrder()));
+        sortingList.sort(Map.Entry.comparingByValue(Comparator.reverseOrder()));
 
-        Map<String, Integer> result = new LinkedHashMap<>();
-        if (sortingList.size() <= 5) {
-            for (Map.Entry<String, Integer> sortedEntry: sortingList) {
-                result.put(sortedEntry.getKey(), sortedEntry.getValue());
-            }
-        } else {
-            for (int i = sortingList.size() - 5; i < sortingList.size(); i++) {
-                result.put(sortingList.get(i).getKey(), sortingList.get(i).getValue());
-            }
-        }
-
-        return result;
+        return sortingList.stream()
+                .limit(5)
+                .sorted((o1, o2) -> o1.getValue().compareTo(o2.getValue()))
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (o1, o2) -> o2, LinkedHashMap::new));
     }
 }

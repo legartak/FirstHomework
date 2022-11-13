@@ -3,21 +3,24 @@ package com.legartak.SecondTask;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import java.util.*;
+import java.util.List;
+import java.util.Map;
+import java.util.Arrays;
+import java.util.LinkedHashMap;
+import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class HashTagFinderTest {
     @Test
-    @DisplayName("Provided null-value to method")
+    @DisplayName("Exception should be returned")
     void testNullGiven() {
-        Map<String, Integer> result = HashTagFinder.findTop5Tags(null);
-        assertNull(result);
+        assertThrows(NullPointerException.class, () -> {HashTagFinder.findTop5Tags(null);});
     }
 
     @Test
-    @DisplayName("Provided empty list of texts to method")
+    @DisplayName("Empty list of texts should be returned")
     void testEmptyListGiven() {
         List<String> input = new ArrayList<>();
         Map<String, Integer> expected = new LinkedHashMap<>();
@@ -27,7 +30,7 @@ public class HashTagFinderTest {
     }
 
     @Test
-    @DisplayName("Provided text with no hashtags to method")
+    @DisplayName("No hashtags should be returned")
     void testEmptyWillBeReturned() {
         List<String> input = Arrays.asList("aaaaaaaaaaaaaaaaaaaaaaaa bbbbbbbbbbbbbb yey hooray");
         Map<String, Integer> expected = new LinkedHashMap<>();
@@ -37,7 +40,7 @@ public class HashTagFinderTest {
     }
 
     @Test
-    @DisplayName("Provided one text with a lot of one hashtag to method")
+    @DisplayName("One hashtag should be returned")
     void testALotTagsInOneText() {
         List<String> input = Arrays.asList("#a #a #a #a #a #a #a");
         Map<String, Integer> expected = new LinkedHashMap<>();
@@ -48,7 +51,7 @@ public class HashTagFinderTest {
     }
 
     @Test
-    @DisplayName("Provided texts with and without hashtags to method")
+    @DisplayName("Map of normal values should be returned")
     void testMixedTexts() {
         List<String> input = Arrays.asList("#Your rate #is 4. It #is good rate for #your first day at this position. Keep #going",
                 "It #is very nice to see #you here. It #is #very #important #for me.",

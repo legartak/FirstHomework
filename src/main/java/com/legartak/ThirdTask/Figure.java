@@ -1,15 +1,14 @@
 package com.legartak.ThirdTask;
 
 import java.util.List;
+import java.util.Objects;
 
 public abstract class Figure implements Comparable<Figure>{
 
     public abstract double getVolume();
 
     public static List<Figure> collectionSorting(List<Figure> figureCollection) {
-        if (figureCollection == null) {
-            return null;
-        }
+        Objects.requireNonNull(figureCollection);
 
         return figureCollection.stream().sorted().toList();
     }
@@ -21,10 +20,9 @@ public abstract class Figure implements Comparable<Figure>{
 
     @Override
     public String toString() {
-        String stringBuilder = "" + this.getClass().getSimpleName() +
+       return  "" + this.getClass().getSimpleName() +
                 ": " +
                 "%.2f".formatted(getVolume());
-        return stringBuilder;
     }
 
     @Override

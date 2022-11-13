@@ -7,28 +7,27 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertIterableEquals;
 
 public class CollectionSortingTest {
 
     @Test
-    @DisplayName("Provided null-value to method")
+    @DisplayName("Exception should be returned")
     void testNullGiven() {
-        List<Figure> result = Figure.collectionSorting(null);
-        assertNull(result);
+        assertThrows(NullPointerException.class, () -> {Figure.collectionSorting(null);});
     }
 
     @Test
-    @DisplayName("Provided empty collection to method")
+    @DisplayName("Empty collection should be returned")
     void testEmptyCollection() {
         List<Figure> result = Figure.collectionSorting(new ArrayList<>());
         assertEquals(new ArrayList<>(), result);
     }
 
     @Test
-    @DisplayName("Provided small collection to method")
+    @DisplayName("Small collection should be returned")
     void testSmallCollection() {
         List<Figure> inputArray= new ArrayList<>(3);
         inputArray.add(new Cube(15));
@@ -40,7 +39,7 @@ public class CollectionSortingTest {
     }
 
     @Test
-    @DisplayName("Provided list with mixed objects to method")
+    @DisplayName("Sorted mixed objects should be returned")
     void testMixedCollection() {
         List<Figure> inputArray= new ArrayList<>(5);
         inputArray.add(new Cube(2));

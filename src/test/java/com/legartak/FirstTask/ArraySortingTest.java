@@ -3,27 +3,26 @@ package com.legartak.FirstTask;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 class ArraySortingTest {
 
     @Test
-    @DisplayName("Provided null-value to method")
+    @DisplayName("Exception should be returned")
     void testNullGiven() {
-        Integer[] result = ArraySorting.onlyPositiveDescending(null);
-        assertNull(result);
+        assertThrows(NullPointerException.class, () -> {ArraySorting.onlyPositiveDescending(null);});
     }
 
     @Test
-    @DisplayName("Provided empty array to method")
+    @DisplayName("Empty array should be returned")
     void testEmptyArrayToMethod() {
         Integer[] result = ArraySorting.onlyPositiveDescending(new Integer[0]);
         assertArrayEquals(new Integer[0], result);
     }
 
     @Test
-    @DisplayName("Provided all negative array of Integers")
+    @DisplayName("Empty array should be returned")
     void testAllNegativeArray() {
         Integer[] inputArray = {-200, -1, -100, -5, -1000};
         Integer[] result = ArraySorting.onlyPositiveDescending(inputArray);
@@ -32,7 +31,7 @@ class ArraySortingTest {
     }
 
     @Test
-    @DisplayName("Provided positive ascending array of Integers")
+    @DisplayName("Positive ascending array of Integers should be returned")
     void testAllPositiveAscending() {
         Integer[] inputArray = {1, 2, 10, 15, 40};
         Integer[] result = ArraySorting.onlyPositiveDescending(inputArray);
@@ -41,7 +40,7 @@ class ArraySortingTest {
     }
 
     @Test
-    @DisplayName("Provided already positive descending array of Integers")
+    @DisplayName("Positive descending array of Integers should be returned")
     void testDescendingPositiveArray() {
         Integer[] inputArray = {100, 10, 5, 3, 2, 1};
         Integer[] result = ArraySorting.onlyPositiveDescending(inputArray);
@@ -50,7 +49,7 @@ class ArraySortingTest {
     }
 
     @Test
-    @DisplayName("Provided array with mixed values 1")
+    @DisplayName("Sorted array of mixed values 1 should be returned")
     void testCaseAllMixed1() {
         Integer[] inputArray = {90, -1, -100, 500, 1, 4, 222};
         Integer[] result = ArraySorting.onlyPositiveDescending(inputArray);
@@ -59,7 +58,7 @@ class ArraySortingTest {
     }
 
     @Test
-    @DisplayName("Provided array with mixed values 2")
+    @DisplayName("Sorted array of mixed values 2 should be returned")
     void testCaseAllMixed2() {
         Integer[] inputArray = {0, -500, 9000, 100, 45,-9, 3};
         Integer[] result = ArraySorting.onlyPositiveDescending(inputArray);

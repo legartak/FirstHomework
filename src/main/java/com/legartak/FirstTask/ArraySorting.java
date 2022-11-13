@@ -2,13 +2,12 @@ package com.legartak.FirstTask;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class ArraySorting {
     public static Integer[] onlyPositiveDescending(Integer[] inputArray) {
-        if (inputArray == null) {
-            return null;
-        }
+        Objects.requireNonNull(inputArray);
 
         return Arrays.stream(inputArray)
                 .sorted(((o1, o2) -> o2-o1))
